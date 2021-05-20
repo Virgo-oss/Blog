@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Μουσαι | 后台注册面板</title>
+    <link rel="icon" href="../images/tools/icon.png" />
+    <link rel="stylesheet" type="text/css" href="../style/registered.css" />
+</head>
+<body>
+<div class="rtn">
+    <a href="../index.html"><img src="../images/tools/icon.png"/></a>
+    <span class="user_name">Μουσαι</span>
+    <span id="about">关于</span>
+    <p class="separate"></p>
+</div>
+<div class="stage">
+    <p class="user">Μουσαι - <span>注册</span></p>
+    <form action="../home_page.html" name="enroll" method="POST" onsubmit="return mate()">
+        <input type="text" id="account" placeholder="用户名"/>
+        <input type="text" id="phone-number" placeholder="手机号"/>
+        <ul id="tooltip">
+            <li>长度为8~14个字符</li>
+            <li>字母/数字以及标点符号至少包含2种</li>
+            <li>不允许有空格、中文</li><i></i>
+        </ul>
+        <input type="password" id="passwd" placeholder="密码"/>
+        <span id="warn"></span>
+        <input type="text" id="validation" placeholder="请输入验证码">
+        <input type="button" id="Access-verify" value="获取验证码">
+        <div class="lear-sign">
+        <label id="lear">
+            <input type="checkbox" name="learn" id="learn" />记住我
+        </label>
+        <a href="land.html" id="sign-in">登录</a></div>
+        <input type="submit" id="login" value="注册" />
+    </form>
+</div>
+
+<div class="bg"></div>
+<script type="text/javascript" src="../js/registered.js"></script>
+</body>
+</html>

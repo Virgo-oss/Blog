@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Μουσαι | 后台控制面板</title>
+    <link rel="icon" href="../images/tools/icon.png" />
+    <link rel="stylesheet" type="text/css" href="../style/land.css" />
+</head>
+<body>
+<div class="rtn">
+    <a href="../index.html"><img src="../images/tools/icon.png"/></a>
+    <span class="user_name">Μουσαι</span>
+    <span id="about">关于</span>
+    <p class="separate"></p>
+
+</div>
+<div class="stage">
+    <p class="user">Μουσαι - <span>登录</span></p>
+    <form action="../home_page.html" name="enroll" method="POST" onsubmit="return mate()">
+        <input type="text" id="account" placeholder="用户名"/>
+        <input type="password" id="passwd" placeholder="密码"/>
+        <img src="../images/tools/hide.png" id="show" onclick="hideShowPsw()" />
+        <div class="lear-sign">
+        <label id="lear">
+            <input type="checkbox" name="learn" id="learn" />记住我
+        </label>
+        <a href="registered.html" id="sign-up">注册</a></div>
+        <input type="submit" id="login" value="登录" />
+
+    </form>
+</div>
+
+<div class="bg"></div>
+<script type="text/javascript" src="../js/login.js"></script>
+</body>
+</html>
