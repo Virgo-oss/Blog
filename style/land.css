@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    overflow: hidden;
+    background: #22343e;
+}
+/*图片：缩放*/
+.rtn{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #344b57;
+}
+.rtn a{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+.rtn img{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin: 10px 0px 0px 18px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.55);
+    border: 3px solid rgb(185, 185, 185);
+    transition: transform 0.4s ease-out;
+}
+.user_name{
+    width: 150px;
+    font-size: 22px;
+    color: #a0e1e7;
+    margin-left: 25px;
+    position: absolute;
+}
+.rtn img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.separate{
+    height: 40px;
+    float: right;
+    margin-top: 10px;
+    border: 1px solid #7a878d;
+}
+#about{
+    width: 102px;
+    float: right;
+    cursor: pointer;
+    color: #9cb0b9;
+    text-align: center;
+}
+/*登录页面设计*/
+.stage{
+    width: 500px;
+    height: 574px;
+    padding: 0px 50px;
+    background: #22343e;
+    display: inline-block;
+}
+.user{
+    width: 100%;
+    height: 120px;
+    display: block;
+    font-size: 40px;
+    color: #e2cfba;
+    margin-top: 80px;
+}
+#passwd{
+    margin: 55px 0px 45px 0px;
+}
+#show{
+    left: 320px;
+    bottom: 70px;
+    cursor: pointer;
+    position: relative;
+}
+#account,#passwd{
+    width: 350px;
+    color: #e2cfba;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    padding-left: 8px;
+    letter-spacing: 2px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #768ea0;
+    background: rgba(36, 49, 61, 0.1);
+}
+#lear{
+    width: 80px;
+    height: 20px;
+    display: block;
+    font-size: 15px;
+    color: #768ea0;
+    line-height: 20px;
+}
+input[type=checkbox]{
+    width: 0px;
+    height: 0px;
+    bottom: 15px;
+    margin-right: 24px;
+    position: relative;
+}
+input[type=checkbox]:after{
+    width: 15px;
+    height: 15px;
+    content: " ";
+    position: relative;
+    border-radius: 3px;
+    display: inline-block;
+    border: 2px solid #768ea0;
+  }
+input[type=checkbox]:checked:after {
+    content: " ";
+    font-size: 14px;
+    background: url('../images/tools/choose.png');
+}
+#sign-up{
+    left: 320px;
+    bottom: 20px;
+    color: #9cb0b9;
+    position: relative;
+    text-decoration: none;
+}
+#sign-up:hover{
+    color: #768ea0;
+}
+#login{
+    width: 358px;
+    border: none;
+    font-size: 15px;
+    color: #202020;
+    margin-top: 65px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    background: #767f84;
+}
+#login:hover{
+    background: #6b6b6b;
+}
+#learn,#login{
+    cursor: pointer;
+}
+#account,#passwd,#login{
+    height: 35px;
+    outline: none;
+    display: block;
+}
+.bg{
+    top: 60px;
+    left: 600px;
+    width: 766px;
+    height: 574px;
+    position: absolute;
+    background: rgb(185, 206, 185);
+    background: url('../images/mobile/collocation.png') no-repeat;
+}
+@media screen and (max-width:1350px) {
+    .separate{
+        display: none;
+    }
+    #about{
+        right: 185px;
+        position: relative;
+    }
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+    body{
+        width: 100%;
+        height: auto;
+        font-size: 15px;
+    }
+    .separate{
+        display: block;
+    }
+    #about{
+        right: 0px;
+    }
+    .stage{
+        width: auto;
+        padding: 3px 55px;
+    }
+    #account,#passwd,.lear-sign{
+        width: 240px;
+    }
+    #show{
+        left: 210px;
+    }
+    #lear{
+        margin-left: 5px;
+    }
+    #sign-up{
+        left: 210px;
+    }
+    #login{
+        width: 250px;
+        margin-top: 45px;
+    }
+    .bg{
+        display: none;
+    }
+}

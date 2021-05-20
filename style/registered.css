@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    overflow: hidden;
+    background: #22343e;
+}
+/*图片：缩放*/
+.rtn{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #344b57;
+}
+.rtn a{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+.rtn img{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin: 10px 0px 0px 18px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.55);
+    border: 3px solid rgb(185, 185, 185);
+    transition: transform 0.4s ease-out;
+}
+.user_name{
+    width: 150px;
+    font-size: 22px;
+    color: #a0e1e7;
+    margin-left: 25px;
+    position: absolute;
+}
+.rtn img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.separate{
+    height: 40px;
+    float: right;
+    margin-top: 10px;
+    border: 1px solid #7a878d;
+}
+#about{
+    width: 102px;
+    float: right;
+    cursor: pointer;
+    color: #9cb0b9;
+    text-align: center;
+}
+#about:hover{
+    color: rgb(233, 231, 231);
+}
+/*登录页面设计*/
+.stage{
+    width: 500px;
+    height: 574px;
+    padding: 0px 50px;
+    background: #22343e;
+    display: inline-block;
+}
+.user{
+    width: 100%;
+    height: 110px;
+    font-size: 40px;
+    color: #e2cfba;
+    margin-top: 80px;
+}
+.user span{
+    font-size: 28px;
+}
+#tooltip{
+    width: 240px;
+    height: 60px;
+    top: 300px;
+    left: 150px;
+    display: none;
+    padding: 10px;
+    font-size: 13px;
+    color: #8b8d8f;
+    border-radius: 5px;
+    position: absolute;
+    background: rgba(18, 33, 48, 0.8);
+}
+#tooltip li{
+    height: 20px;
+    line-height: 20px;
+    list-style: none;
+}
+#tooltip i{
+    width: 22px;
+    height: 12px;
+    top: 9px;
+    left: 206px;
+    position: relative;
+    display: inline-block;
+    background: url('../images/tools/triangle.png');
+}
+#warn{
+    width: 16px;
+    height: 16px;
+    left: 320px;
+    bottom: 60px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    background: url('../images/tools/pwdtip.png');
+}
+#account,#phone-number,#passwd{
+    width: 350px;
+    color: #e2cfba;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    padding-left: 8px;
+    letter-spacing: 2px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #768ea0;
+    background: rgba(36, 49, 61, 0.1);
+}
+#validation{
+    width: 172px;
+    height: 33px;
+    color: #e2cfba;
+    margin: 0px 30px 0px -20px ;
+    padding-left: 8px;
+    border: 2px solid #768ea0;
+    background: rgba(36, 49, 61, 0.1);
+    /* border-radius: 3px; */
+}
+#Access-verify{
+    width: 140px;
+    height: 35px;
+    border: 0;
+    background: #9cb0b9;
+}
+#Access-verify:hover{
+    background: #7a878d;
+}
+#validation,#Access-verify{
+    outline: none;
+}
+#passwd,#phone-number,#validation,#Access-verify{
+    margin-top: 30px;
+}
+#lear{
+    width: 80px;
+    height: 20px;
+    display: block;
+    font-size: 15px;
+    color: #768ea0;
+    line-height: 20px;
+    margin: 30px 0px;
+}
+input[type=checkbox]{
+    width: 0px;
+    height: 0px;
+    bottom: 15px;
+    margin-right: 24px;
+    position: relative;
+}
+input[type=checkbox]:after{
+    width: 15px;
+    height: 15px;
+    content: " ";
+    position: relative;
+    border-radius: 3px;
+    display: inline-block;
+    border: 2px solid #768ea0;
+  }
+input[type=checkbox]:checked:after {
+    content: " ";
+    font-size: 14px;
+    background: url('../images/tools/choose.png');
+}
+#sign-in{
+    left: 320px;
+    bottom: 50px;
+    color: #9cb0b9;
+    position: relative;
+    text-decoration: none;
+}
+#sign-in:hover{
+    color: #768ea0;
+}
+#login{
+    width: 358px;
+    border: none;
+    bottom: 19px;
+    font-size: 15px;
+    color: #202020;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    position: relative;
+    background: #767f84;
+}
+#login:hover{
+    background: #6b6b6b;
+}
+#Access-verify,#learn,#login{
+    cursor: pointer;
+}
+#account,#phone-number,#passwd,#login{
+    height: 35px;
+    outline: none;
+    display: block;
+}
+.bg{
+    top: 60px;
+    left: 600px;
+    width: 766px;
+    height: 574px;
+    position: absolute;
+    background: rgb(185, 206, 185);
+    background: url('../images/mobile/collocation.png') no-repeat;
+}
+@media screen and (max-width:1350px) {
+    .separate{
+        display: none;
+    }
+    #about{
+        right: 185px;
+        position: relative;
+    }
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+    body{
+        width: 100%;
+        height: auto;
+        font-size: 15px;
+    }
+    .separate{
+        display: block;
+    }
+    #about{
+        right: 0px;
+    }
+    .user{
+        height: 100px;
+        margin-top: 40px;
+    }
+    .stage{
+        width: auto;
+        padding: 3px 55px;
+    }
+    #account,#phone-number,#passwd,.lear-sign{
+        width: 240px;
+        font-size: 10px;
+    }
+    #tooltip{
+        top: 255px;
+        left: 83px;
+        font-size: 10px;
+        width: 200px;
+    }
+    #tooltip i{
+        left: 168px;
+    }
+    #warn{
+        left: 210px;
+    }
+    #show{
+        left: 210px;
+    }
+    #validation{
+        width: 120px;
+        margin-right: 13px;
+    }
+    #Access-verify{
+        width: 100px;
+        height: 35px;
+        border: 0;
+        background: #9cb0b9;
+    }
+    #lear{
+        margin-left: 5px;
+    }
+    #sign-in{
+        left: 220px;
+    }
+    #login{
+        width: 250px;
+    }
+    .bg{
+        display: none;
+    }
+}
