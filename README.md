@@ -1,1 +1,1 @@
-virgo-oss.github.io
+https://virgo-oss.github.io/Blog
