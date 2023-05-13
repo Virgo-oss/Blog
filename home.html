@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" style="transform: bnone;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="yandex-verification" content="bf11bf658630aa07" />
+    <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no">
+    <title>唯爱优 - 博客</title>
+    <link rel="icon" href="images/tools/icon.png" />
+    <link rel="stylesheet" type="text/css" href="style/home.css" />
+    <link rel="stylesheet" type="text/css" href="style/tools.css" />
+    <link rel="stylesheet"  type="text/css" href="style/mobile.css" />
+</head>
+<body id="night">
+<figure>
+    <span id="NewDate"></span>
+    <a href="admin/land.html" class="login">登录</a>
+</figure>
+<!--网站头部-->
+<header>
+    <img src="images/logo.png" id="logo">
+</header>
+<nav id="nav">
+    <a href="https://vaiu.tk/" class="one">博客首页</a>
+    <a href="">博客首页</a>
+    <a href="">博客首页</a>
+    <a href="">博客首页</a>
+    <a href="">博客首页</a>
+    <a href="other/tools.html" target="_blank">工具网址</a>
+    <a href="https://github.com/Virgo-oss/" target="_blank" id="github"><img src="images/tools/github.png"></a>
+</nav>
+<div id="wrap">
+<!--网站中部-->
+<div class="content">
+    <div class="article">
+        <div id="move">
+        <img src="images/mobile/background.jpg" id="bg-move">
+        <div class="video img">
+            <video poster="images/preload/video.png" src="video/duction.mp4" id="videoPlayer" width="480px" height="300px" controls>
+                <source type="video/mp4" src="video/duction.mp4">
+            </video>
+        </div></div>
+        <button onclick="play()" id="clear">实验按钮</button>
+    </div>
+    <div class="sear">
+        <input type="search" id="search" placeholder="搜索...">
+    </div>
+</div>
+<a href="admin/land.html" target="_blank" id="area"></a>
+</div>
+<!--音乐播放-->
+<div class="music">
+    <input type="checkbox" id="sidebar">
+        <audio id="music" src="music/梦回还.mp3"></audio>
+    <div id="Qplayer">
+        <div class="musicProgress">
+            <i id="musicProgress"></i>
+        </div>
+        <span id="musicPlay" onclick="play()"></span>
+        <span id="musicNext"></span>
+        <span id="musicTimes">00:00 / 00:00</span>
+    </div>
+   <div id="arrow">
+      <label for="sidebar">
+        <img src="images/tools/music-right.png"></label>
+    </div>
+  </div>
+<div class="tools">
+    <a href="#top" id="back_top" class="btn">
+        <img src="images/tools/back-top.png" class="back-top">
+    </a>
+    <div class="tools-x">
+        <div id="sky">
+            <img src="https://a.hecdn.net/img/common/icon/202106d/101.png" id="styico">
+        </div>
+        <div id="weather">
+            <div class="wt_ico" id="he-plugin-standard"></div>
+            <script>
+                WIDGET = {
+                "CONFIG": {
+                "layout": "2",
+                "width": "270",
+                "height": "270",
+                "background": "1",
+                "dataColor": "FFFFFF",
+                "borderRadius": "5",
+                "key": "76192192ffc44327aee3b50025223167"}}
+            </script>
+            <script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>
+        </div>
+        <i id="mutual" class="btn">
+            <img src="images/tools/dialogue.png" class="icon" />
+        </i>
+        <a href="" class="btn">
+            <img src="images/tools/night.png" class="icon" />
+        </a>
+    </div>
+</div>
+<!--网站底部-->
+<footer></footer>
+
+<!--JavaScript脚本-->
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/switch.js"></script>
+<script type="text/javascript" src="js/tools.js"></script>
+</body>
+</html>
