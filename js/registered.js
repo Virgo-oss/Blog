@@ -1,5 +1,3 @@
-
-
 var warning = document.getElementById("warn");
 warning.onclick = function() {
     let tip = document.getElementById("tooltip");

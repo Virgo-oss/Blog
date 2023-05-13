@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #ebebeb;
+    font-family: "Microsoft YaHei";
+}
+ /* 滚动条- 滚动条头- 滚动条轨道 */
+::-webkit-scrollbar{
+  width: 7px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 1em;
+  background-color: rgb(129, 127, 127);
+}
+::-webkit-scrollbar-track{
+  border-radius: 1em;
+  background-color: rgb(21, 40, 41);
+}
+body{
+    margin: 10px 0px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #186686;
+    /* background: url(https://www.cthulhuclub.com/wp-content/uploads/2022/12/f40a0b1b162ce864e568c7f81a80f12a-980x551.jpg); */
+    /* background-image: url(https://cdn.xydh.fun/zurich.png); */
+}
+.header,#search,#sub,.wrap,img,.footer{
+    border-radius: 15px;
+}
+.header,.wrap,.col,.footer{
+    background: rgba(199, 195, 195, 0.2);
+}
+div,form{
+    display: inline-block;
+}
+ /* 搜索实现 */
+.header{
+    width: 1305px;
+    height: 100px;
+    display: block;
+    margin-left: 27px;  /* 24px */
+}
+/* 设备宽高像素 */
+#device{
+    height: 44px;
+    padding: 4px;
+    margin: 25px 10px;
+}
+#device p{
+    line-height: 20px;
+}
+#hr{
+    padding: 0;
+    display: none;
+    margin: 2px 0 0 0;
+}
+/* 搜索框实现 */
+form{
+    top: 45px;
+    left: 920px;
+    bottom: 10px;
+    height: 70px;
+    width: 330px;
+    line-height: 70px;
+    position: absolute;
+}
+input{
+    height: 35px;
+    line-height: 35px;
+    border: 0;
+    color: #555555;
+}
+#search{
+    outline: none;  /* 点击框消除 */
+    width: 290px;
+    padding-left: 10px;
+}
+#sub{
+    width: 50px;
+    cursor: pointer;
+    position: absolute;
+    margin: 17px 0 0 -50px;
+    background: #ff8800;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.fg{
+    display: none;
+}
+/* 主体实现 */
+#content{
+    width: 1335px;
+    margin-left: 12px;
+}
+.wrap{
+    float: left; 
+    width: 385px;
+    height: 280px;
+    margin: 15px;
+    padding: 15px;
+}
+h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+hr{
+    border-style: 1 inset;
+    margin-bottom: 5px;
+    border-color: aliceblue; 
+}
+.col{
+    width: 95px;
+    height: 32px;
+    border-radius: 5px;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+.img{
+    margin-left: 1px;
+}
+.ims{
+    margin-left: 44px;
+}
+.col a{
+    display: inline;
+    text-decoration: none;
+}
+a:hover{
+    color: #8dcafc;
+}
+img{
+    width: 22px;
+    margin: -5px 3px 0px 4px;
+    vertical-align: middle;
+}
+/* 底部设计 */
+.footer{
+    width: 1305px;
+    height: 180px;
+   margin-left: 27px;   /* 23px */
+}

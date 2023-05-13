@@ -28,24 +28,6 @@ function mate() {
         document.getElementById("passwd").focus();
         return false;
     }
-
-    // if (name !== userName || name !== nub) {
-    //     alert("用户名错误，请重新输入！");
-    //     document.getElementById("account").focus();
-    //     return false;
-    // }
-    // else{
-    //     alert("用户名输入正确！");
-    // }
-    // if (wd !== userwd || wd !== pass) {
-    //     alert("密码输入错误，请重新输入！");
-    //     document.getElementById("passwd").focus();
-    //     return false;
-    // }
-    // else{
-    //     alert("密码输入正确！");
-
-    // }
     alert("欢迎回来！")
     return false;
 }

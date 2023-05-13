@@ -1,0 +1,72 @@
+/* 当设备宽度小于、大于时 */
+@media screen and (max-width:398px) {
+    body{
+        margin: 0;
+        background-size: cover;
+        background-image: url(../imges/zurich.png);
+    }
+    .header{
+        height: 50px;
+    }
+    .fg{
+        display: block;
+        opacity: 0.1;
+        margin: 10px 0;
+    }
+    .header,#content,.footer{
+        width: auto;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+    .header,#content,.wrap,.col,.footer{
+        background: none;
+    }
+    #device{
+        font-size: 12px;
+        margin: 0 10px;
+    }
+    form{
+        top: 8px;
+        left: 134px;
+        height: 30px;
+        width: 120px;
+        line-height: 30px;
+    }
+    #search{
+        color: inherit;
+        width: 240px;
+        /* font-size: 14px; */
+        background: rgba(0, 0, 0, 0.1);
+    }
+    #sub{
+        width: 50px;
+        top: -17px;
+        left: 251px;
+        color: rgb(165, 165, 165);
+        background: rgba(0, 0, 0, 0.2);
+    }
+    .wrap{
+        width: 353px;
+        padding: 10px;
+        margin: 0;
+        margin: 0 10px;
+    }
+    hr{
+        display: none;
+        /* opacity: 0.5; */
+    }
+    h3{
+        margin: 0;
+        text-align: center;
+    }
+    .ims{
+        margin-left: 28px;
+    }
+}
+/* 当设备宽度大于时 */
+@media screen and (min-width: 1300px) {
+    body{
+        background-position: 50%;
+    }
+}

@@ -3,13 +3,6 @@ body {
     background: #2e2e2c;
     font-family: "Roboto","Noto","Helvetica","Arial","sans-serif";
 }
-* {
-    -webkit-tap-highlight-color: transparent;
-}
-::selection {
-    color: #e0e0e0;
-    background: rgba(255,64,129,.35);
-}
 #rin-bg{
     top: 0;
     left: 0;
